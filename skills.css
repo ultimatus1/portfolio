@@ -1,0 +1,97 @@
+
+.container{
+    width: 590px;
+    height: 400px;
+    margin-top: -450px;
+    margin-left: 100px;
+  }
+  
+  .skills{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+    margin-left: 10px;
+    position: relative;
+    letter-spacing: -0px;
+    text-transform: uppercase;
+    font-size: 6rem;
+    color: aliceblue;
+    text-shadow: 2px 2px 1px black;
+  }
+  
+  .skillIcon{
+    margin-top: -100px;
+    margin-left: 85px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  #slide {
+    position: relative;
+    left: -60vw;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  
+  
+  @-webkit-keyframes slide {
+    100% { left: 0; }
+  }
+  
+  @keyframes slide {
+    100% { left: 0; }
+  }
+  
+  
+  #slideFromRight {
+    position: relative;
+    right: -160vw;
+    -webkit-animation: slideFromRight 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slideFromRight 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @-webkit-keyframes slideFromRight {
+    100% { right: 0; }
+  }
+  
+  @keyframes slideFromRight {
+    100% { right: 0; }
+  }
+
+
+  .container2{
+    width: 80%;
+    height: 200px;
+    margin-top: -470px;
+    color: #f0f0f0;
+
+  }
+  .container2 p {
+    position: relative;
+    top: calc(50% - 21px);
+    text-transform: uppercase;
+    opacity: 0;
+    text-align: end;
+    animation: in 3s ease-out forwards;
+    animation-delay: 2s;
+    
+  }
+
+  @keyframes in{
+    0%{
+      letter-spacing: -17px;
+      opacity: 0;
+    }
+    30%{
+      letter-spacing: 4px;
+      opacity: 1;
+    }
+    100%{
+      letter-spacing: 4px;
+      opacity: 1;
+    }
+  }
